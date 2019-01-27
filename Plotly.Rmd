@@ -1,0 +1,25 @@
+---
+title: "Plotly Project"
+output: ioslides_presentation
+---
+
+
+## Introduction
+This document was created on 27th January 2019.
+```{r, message=FALSE}
+library(datasets)
+library(plotly)
+data(iris)
+```
+
+## Iris Dataset
+```{r}
+head(iris)
+
+```
+
+##Plotly Plot
+```{r}
+plot_ly(iris, x = iris$Sepal.Length, y = iris$Sepal.Width, 
+        mode="markers", type="scatter")
+```
